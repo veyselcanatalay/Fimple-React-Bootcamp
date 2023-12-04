@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basit HTML Dosyası</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- styles.css dosyasını dahil et -->
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>Homework 1</h1>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <form class="todoForm" id="todoForm">
+                <div class="title-container">
+                    <label class="title-label" for="title">
+                        <strong>
+                            Başlık
+                        </strong>
+                    </label>
+                    <input class="title-input" type="text" id="title" name="title" required>
+                </div>
+                <div class="is-completed">
+                    <label for="completed">Tamamlandı mı?</label>
+                    <input type="checkbox" id="completed" name="completed">
+                </div>
+
+            </form>
+                <button type="submit">Gönder</button>
+        </div>
+
+        <div class="list-container" id="todoList">
+            <!-- Liste burada dinamik olarak oluşturulacak. -->
+        </div>
+    </div>
+
+    <!-- script.js dosyasını dahil et -->
+    <script src="script.js"></script>
+</body>
+
+</html>
